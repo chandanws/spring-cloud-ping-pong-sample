@@ -1,0 +1,12 @@
+rootProject.name = 'sample-spring-cloud'
+include ':sample-config'
+include ':sample-eureka'
+include ':sample-ping'
+include ':sample-pong'
+include ':sample-monitor'
+
+project(':sample-config').projectDir = "$rootDir/sample-config" as File
+project(':sample-eureka').projectDir = "$rootDir/sample-eureka" as File
+project(':sample-ping').projectDir = "$rootDir/sample-ping" as File
+project(':sample-pong').projectDir = "$rootDir/sample-pong" as File
+project(':sample-monitor').projectDir = "$rootDir/sample-monitor" as File
